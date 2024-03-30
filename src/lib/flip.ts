@@ -35,7 +35,7 @@ class Flip {
 		const dx = from.left - to.left
 		const dy = from.top - to.top
 
-		const removeStyle = this.absolute(el, { ...to })
+		const removeStyle = this.absolute(el, to)
 		const flip = el.animate(
 			[
 				{

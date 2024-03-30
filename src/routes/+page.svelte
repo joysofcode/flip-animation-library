@@ -1,9 +1,9 @@
 <script lang="ts">
-	import { Flip } from '$lib/flip'
+	import { createFlip } from '$lib/flip'
 
 	// @ts-ignore
 	$effect(async () => {
-		const box = new Flip('.box')
+		const box = createFlip('.box')
 		layout = 2
 		box.flip({ delay: 600 })
 	})
